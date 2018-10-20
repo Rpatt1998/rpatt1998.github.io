@@ -108,7 +108,36 @@ button {
 	background-color: rgba(255,255,255,.3);
 }
 
-.research {
+.second {
+    opacity: 0;
+    -webkit-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+}
+.Main {
+	padding:3%;
+	opacity: 1;
+	text-align: left;
+	font-family: arial;
+	font-size: 1em;
+	color: white;
+	line-height: 1.5em;
+	font-weight: none;
+	word-spacing: .05em;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: none;
+	text-transform: none;
+
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+.Research {
 	padding:3%;
 	text-align: left;
 	font-family: arial;
@@ -121,5 +150,25 @@ button {
 	font-style: normal;
 	font-variant: none;
 	text-transform: none;
+	display: none;
+	opacity: 0;
+
+}
+
+.BLN {
+	padding:3%;
+	text-align: left;
+	font-family: arial;
+	font-size: 1em;
+	color: white;
+	line-height: 1.5em;
+	font-weight: none;
+	word-spacing: .05em;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: none;
+	text-transform: none;
+	display: none;
+	opacity: 0;
 
 }
