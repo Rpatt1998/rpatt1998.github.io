@@ -84,6 +84,7 @@ td.links {
 
 }
 .center {
+	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 1%;
@@ -107,17 +108,16 @@ button {
 }
 
 .research {
-	padding:5%;
+	padding:3%;
 	text-align: left;
-	font-family: verdana;
+	font-family: arial;
 	font-size: 1em;
-	letter-spacing: .3em;
-	word-spacing: -.3em;
 	color: white;
+	line-height: 1.5em
 	font-weight: none;
 	text-decoration: none;
 	font-style: normal;
-	font-variant: small-caps;
-	text-transform: uppercase;
+	font-variant: none;
+	text-transform: none;
 
 }
