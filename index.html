@@ -1,106 +1,143 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-	<script>
-		var mainName = "Main";
-		function research() {
-  	 	 	var z = document.getElementById("Research");
-  	 	 	var x = document.getElementById(mainName);
-  	 	 	z.style.display="block";
-  	 	 	x.style.opacity = "0";
-  	 	 	setTimeout(function(){ x.style.display="none";
-  	 	 		z.style.opacity = "1";
-  	 	 		mainName = "Research";
-  	 	 	}, 125);
-  	 	 	
-  	 	 	
-  	 	 }
-		function main() {
-  	 	 	var z = document.getElementById("Main");
-  	 	 	var x = document.getElementById(mainName);
-  	 	 	z.style.display="block";
-  	 	 	x.style.opacity = "0";
-  	 	 	setTimeout(function(){ x.style.display="none";
-  	 	 		z.style.opacity = "1";
-  	 	 		mainName = "Main";
-  	 	 	}, 125);
-  	 	 	
-  	 	 }
-  	 	 function bln() {
-  	 	 	var z = document.getElementById("BLN");
-  	 	 	var x = document.getElementById(mainName);
-  	 	 	z.style.display="block";
-  	 	 	x.style.opacity = "0";
-  	 	 	setTimeout(function(){ x.style.display="none";
-  	 	 		z.style.opacity = "1";
-  	 	 		mainName = "BLN";
-  	 	 	}, 125);
-  	 	 	
-  	 	 }
-	</script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Ray Patt</title> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    header {
+      background-color: #004d40;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #intro-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    #intro-image {
+      width: 200px;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    #intro-text {
+      background-color: rgba(0, 77, 64, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      flex: 1;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    #button a:hover {
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the color and opacity as desired */
+    }
+
+    #buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: rgba(46, 125, 50, 0.8);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    #buttons a.active {
+      background-color: rgba(46, 125, 50, 1);
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-	<p id="test"> </p>
-<table class="center bg">
-	<tr>
-		<td class="image">
-			<a href = "index.html">
-				<img src="Picture.png" class="image"> 
-			</a> 
-		</td>
-		<td>
-			<table>
-				<tr>
-					<button class = "button">
-						<a href = "index.html"> 
-							<p class="title"> raymond patt </p>
-						</a>
-					</button>
-				</tr>
-				<tr>
-					<div style="width:100%">
-						<button style ="width:12vw" class="button links"> 
-							<a href="research.html">
-								Research 
-							</a>
-						</button>
-						<button style ="width:13vw" class="button links"> 
-							<a href = "BLN.html">
-								Buckeye Language Network 
-							</a>
-						</button>
-						<button style ="width:15vw" class="button links"> 
-							<a href = "neuro.html">
-								Neuro- ambassador
-							</a>
-						</button>
-						<button style ="width:12vw" class="button links"> 
-							<a href = "personal.html">
-								Personal 
-							</a>
-						</button>
-					
-					</div>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-<div id="Main" class="bg center body">
-	<center>
-			<p class=bodyTitle id="title">  
-				<b>NeuroAmbassador Program</b>
-			</p> 
-			</center>
-			<p class=body> 
-		&nbsp; Hello! As you can tell from the massive writing up above, my name is Raymond Patt, or just Ray! I am an undergraduate student at The Ohio State University studying Neuroscience and Linguistics with a focus in cognitive/computational methods. Due to the nature of my coursework, I'll also be getting a minor in computer and information sciences along the way! One of my primary interests is Language; I've been encapsulated by it for years. As a kid I used to spend hours on end looking up languages resources-- for languages I didn't even plan on learning! I loved having the wealth of my knowledge at my disposal, and constantly pushed those around me to learn the language that entranced me that week. (This week I'm interested in <b> <i> Nahuatl </b> </i>!) More specifically, I am interested in how we can use computers, especially Artificial Intelligence, to aid in second language acquisition and testing. 
-	</p>
+  <header>
+    <h1> Welkom! Ahoj! Bienvenidos!</h1>
+  </header>
 
-</div>
+  <section id="buttons">
+    <a href="index.html" class="active">Home</a>
+    <a href="posters.html">Posters</a>
+    <a href="presentations.html">Presentations</a>
+    <a href="papers.html">Papers</a>
+    <a href="projects.html">Projects</a>
+  </section>
 
+  <main style="background-color: transparent;">
+    <section id="intro-container">
+      <div id="intro-image">
+        <img src="img.jpeg" id="intro-image" alt="Your Name">
+      </div>
+      <div id="intro-text">
+       
+        <p>
+          [Your introductory paragraph goes here]
+        </p>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div>
+      <h3>Contact Information</h3>
+      <p>
+        Email: your_email@example.com<br>
+        Phone: 123-456-7890
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
